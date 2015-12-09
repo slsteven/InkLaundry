@@ -10,7 +10,7 @@ angular.module('myApp', [])
     { label: '4', value: 4 },
     { label: '5', value: 5 }
   ];
- 
+
   $scope.myBed = $scope.options[0];
   $scope.myNightstand = $scope.options[0];
   $scope.myHammock = $scope.options[0];

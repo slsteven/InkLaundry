@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html ng-app="myApp">
 	<head>
+		<title>MicroStore - Responsive One Page shop</title>
 		<meta charset="UTF-8">
 		<title>InkLaundry</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -14,9 +15,12 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./static/img/ico/72.png" type="image/png"/>
 		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="./static/img/ico/120.png" type="image/png"/>
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="./static/img/ico/152.png" type="image/png"/>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 
-	
 	<body id="home">
 		<div id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -25,7 +29,7 @@
 						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#home">
-						<img id="navlogo" src="./static/img/logo_inklaundry1.jpg" alt="microstore" width="122" height="45">
+						<!-- <img id="navlogo" src="./static/img/inklaundry.jpg" alt="microstore" width="122" height="45"> -->
 					</a>
 
 				</div>
@@ -33,18 +37,9 @@
 					<ul id="navigation" class="nav navbar-nav navbar-right text-center">
 						<li><a href="#products">Products</a></li>
 						<li><a href="#about">About</a></li>
-						<li><a href="#orderform">Order</a></li>
+						<li><a href="#testimonial">Testimonials</a></li>
 						<li><a href="#contact">Contact</a></li>
-						<!-- <li class="dropdown">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">UK</button>
-							<ul class="dropdown-menu">
-							<li><a href="#">English</a></li>
-							<li><a href="#">Deutsch</a></li>
-							<li><a href="#">France</a></li>
-							<li><a href="#">Slovak</a></li>
-						  </ul>
-						</li>
- -->
+
 					</ul>
 				</div>
 
@@ -55,8 +50,8 @@
 			<div class="container welcome-content">
 				<div class="row">
 					<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center wow fadeInUp">
-						<img id="logo" src="./static/img/logo_inklaundry2.jpg" class="img-responsive text-center" alt="shop logo" width="300">
-						<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquam est esse fugiat neque, accusamus itaque quam quisquam laborum maiores hic tempore in saepe distinctio doloremque amet? Quae tempora, libero.</h2>
+						<img id="logo" src="./static/img/inklaundry.jpg" class="img-responsive text-center" alt="shop logo" width="400px; background-color:red;">
+						<h2>InkLaundry is a screen printing service that provides schools, startups, and local shops with custom apparel. Choose from a wide range of styles and brands.</h2>
 						<ul class="social-links text-center">
 							<li><a href="#link"><i class="icon-twitter"></i></a></li>
 							<li><a href="#link"><i class="icon-facebook"></i></a></li>
@@ -69,7 +64,9 @@
 			<div class="overlay-bg"></div>
 			<div id="hero-slides">
 				<div class="slides-container">
-					<img src="./static/img/hero_background.jpeg" alt="">
+					<img src="./static/img/hero_img1.jpg" alt="">
+					<img src="./static/img/hero_img2.jpg" alt="">
+					<img src="./static/img/hero_img3.jpg" alt="">
 				</div>
 			</div>
 		</section>
@@ -77,7 +74,7 @@
 		<section id="products" class=" padding-top-bottom">
 			<div class="container">
 				<header class="section-header text-center wow fadeInUp">
-					<h2>Popular Picks</h2>
+					<h2>Past Products</h2>
 				</header>
 			</div>
 			<div class="container">
@@ -86,48 +83,48 @@
 						<div class="img-box">
 							<div class="hover-mask2"></div>
 							<span class="product-icon icon-eye"></span>
-							<img class="img-responsive project-image" src="./static/img/test.jpeg" alt="">
+							<img class="img-responsive project-image" src="./static/img/gildan.jpeg" alt="">
 						</div>
 						<div class="product-info col-md-12">
-							<p class="project-price">$#</p>
+							<p class="project-price">$$$</p>
 							<div>
-								<h4 class="project-title">Sweaters</h4>
+								<h4 class="project-title">See More</h4>
 							</div>
 						</div>
-						<div class="sr-only project-description"  data-oldprice="$800" data-images=".static/img/test.jpeg,img/test.jpeg,img/test.jpeg,img/test.jpeg,img/05.jpg">
+						<div class="sr-only project-description"  data-oldprice="$800" data-images="img/01.jpg,img/02.jpg,img/03.jpg,img/04.jpg,img/05.jpg">
 							<p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
 						</div>
 					</article>
-					
+
 					<article class="mock-up product col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
 						<div class="img-box">
 							<div class="hover-mask2"></div>
 							<span class="product-icon icon-eye"></span>
-							<img class="img-responsive project-image" src="./static/img/test.jpeg" alt="">
+							<img class="img-responsive project-image" src="./static/img/AA.png" alt="">
 						</div>
 						<div class="product-info col-md-12">
-							<p class="project-price">#</p>
+							<p class="project-price">$$$</p>
 							<div>
-								<h4 class="project-title">T-Shirts</h4>
-							</div>	
+								<h4 class="project-title">See More</h4>
+							</div>
 						</div>
 						<div class="sr-only project-description" data-images="img/06.jpg,img/07.jpg,img/08.jpg,img/09.jpg">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
 							<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
 						</div>
 					</article>
-					
+
 					<article class=" icons product col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
 						<div class="img-box">
 							<div class="hover-mask2"></div>
 							<span class="product-icon icon-eye"></span>
-							<img class="img-responsive project-image" src="./static/img/test.jpeg" alt="">
+							<img class="img-responsive project-image" src="./static/img/jerzee.png" alt="">
 						</div>
 						<div class="product-info col-md-12">
-							<p class="project-price"></p>
+							<p class="project-price">$$$</p>
 							<div>
-								<h4 class="project-title">Sportswear</h4>
-							</div>	
+								<h4 class="project-title">See More</h4>
+							</div>
 						</div>
 						<div class="sr-only project-description" data-oldprice="$700" data-images="img/10.jpg,img/11.jpg,img/12.jpg">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
@@ -137,7 +134,7 @@
 				</div>
 			</div>
 
-			<!-- <div id="project-modal" class="modal " style="display: none;" aria-hidden="true">
+			<div id="project-modal" class="modal " style="display: none;" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -149,7 +146,7 @@
 							<div class="container">
 								<div class="row">
 									<div id="project-sidebar" class="col-md-4 ">
-										<h2 id="sdbr-title">Flat UI-Kit</h2>	
+										<h2 id="sdbr-title">Flat UI-Kit</h2>
 										<div>
 											<div id="sdbr-price">200</div>
 											<div id="sdbr-oldprice">500</div>
@@ -163,12 +160,24 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 		</section>
 
-		
-		
-		<section id="about" class="padding-top-bottom  gray-bg">
+		<!-- <section class="gray-bg padding-top-bottom ">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 wow fadeInLeft">
+						<h3 class="center cta-message">Free international shipping only  <strong><span id="countdown"></span></strong></h3>
+
+					</div>
+					<div class="col-md-4 text-center wow fadeInRight">
+						<a class="btn btn-store cta-button smooth-scroll" href="#orderform" >Order Now</a>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section id="about" class="gray-bg padding-top-bottom ">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 wow fadeInLeft">
@@ -185,10 +194,10 @@
 				</div>
 			</div>
 		</section>
-		
-		<<!-- section id="testimonial" class="padding-top-bottom image-bg light-typo">
+
+		<!-- <section id="testimonial" class="padding-top-bottom image-bg light-typo">
 			<div class="container">
-				
+
 				<div class="testimonial">
 					<div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example" data-interval="10000">
 						<ol class="carousel-indicators">
@@ -220,7 +229,7 @@
 			</div>
 		</section> -->
 
-		<section id="newsletter" class="light-typo dark-bg padding-top-bottom">
+		<!-- <section id="newsletter" class="light-typo dark-bg padding-top-bottom">
 			<div class="container ">
 				<header class="section-header text-center">
 					<h2>Stay in touch</h2>
@@ -238,12 +247,12 @@
 					</form>
 				</div>
 			</div>
-		</section>	
+		</section> -->
 
-		<section id="orderform" class="gray-bg padding-top-bottom" ng-controller="orderController">
+		<!-- <section id="orderform" class="gray-bg padding-top-bottom" ng-controller="orderController">
 			<div class="container">
 				<header class="section-header text-center">
-					<h2>Get a price quote</h2>
+					<h2>Order Form</h2>
 				</header>
 				<form action="index.html" method="post" novalidate id="order-form">
 					<div class="row">
@@ -268,7 +277,7 @@
 								<select class="form-control form-control-inline" ng-model="myBed" ng-options="opt as opt.label for opt in options"></select>
 							  </td>
 							  <td class="text-right vert-align">{{ myBed.value * 700 | currency:"$":0  }}</td>
-							</tr>							
+							</tr>
 							<tr>
 							  <td class="vert-align">Nightstand</td>
 							  <td class="vert-align">{{ 400 | currency:"$":0  }}</td>
@@ -276,7 +285,7 @@
 								<select class="form-control form-control-inline" ng-model="myNightstand" ng-options="opt as opt.label for opt in options"></select>
 							  </td>
 							  <td class="text-right vert-align">{{ myNightstand.value * 400 | currency:"$":0  }}</td>
-							</tr>							
+							</tr>
 							<tr>
 							  <td class="vert-align">Hammock</td>
 							  <td class="vert-align">{{ 600 | currency:"$":0  }}</td>
@@ -293,7 +302,7 @@
 							</tr>
 						  </tbody>
 						</table>
-						</div>	
+						</div>
 
 					<div class="col-sm-6 col-md-6 contact-info">
 						<p class="text-center"><strong>Payment Method</strong></p>
@@ -322,8 +331,8 @@
 										  <option>March</option>
 										</select>
 									</div>
-								</div>	
-							</div>	
+								</div>
+							</div>
 							<div class="col-sm-6 col-md-6">
 								<div class="form-group">
 									<label class="control-label" for="contact-mail">year</label>
@@ -336,9 +345,9 @@
 										  <option>2018</option>
 										</select>
 									</div>
-								</div>	
-							</div>	
-						</div>	
+								</div>
+							</div>
+						</div>
 
 						<p class="text-center"><strong>Information</strong></p>
 						<div class="row">
@@ -358,7 +367,7 @@
 						<div class="form-group">
 							<label class="control-label" >Email</label>
 							<input name="email" placeholder="Your email" class="form-control input-lg" type="email">
-						</div>	
+						</div>
 						<p class="text-center"><strong>If you have Coupon code</strong></p>
 						<div class="input-group ">
 							<input placeholder="Coupon code" class="form-control input-lg" type="text" >
@@ -368,25 +377,25 @@
 						</div>
 
 					</div>
-					
+
 					<div class="col-sm-6 col-md-6">
 						<p class="text-center"><strong>Delivery address</strong></p>
 						<div class="form-group">
 							<label class="control-label">Street</label>
 							<input name="street" placeholder="Street address" class="form-control" type="text">
-						</div>	
+						</div>
 						<div class="form-group">
 							<label class="control-label">City</label>
 							<input name="city" placeholder="City" class="form-control" type="text">
-						</div>	
+						</div>
 						<div class="form-group">
 							<label class="control-label">Country</label>
 							<input name="Country" placeholder="Country" class="form-control" type="text">
-						</div>							
+						</div>
 						<div class="form-group">
 							<label class="control-label">postcode</label>
 							<input name="postcode" placeholder="Post code" class="form-control" type="text">
-						</div>					
+						</div>
 
 						<table class="table">
 						  <thead>
@@ -417,28 +426,49 @@
 					</form>
 
 			</div>
-		</section>
+		</section> -->
 
-		<!-- <section id="cta" class="padding-top-bottom color-bg light-typo">
+		<section id="cta" class="padding-top-bottom dark-typo">
 			<div class="container">
 				<div class="row text-center">
-					<div class="col-md-4 col-sm-4 news wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="10">
-						<i class="icon-trophy iconBig"></i>
-						<h3>Quality guaranteed</h3>
+					<div class="col-md-12 col-sm-12 news wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="10">
+						<h2>Past Designs</h2>
+						<img src="./static/img/Andrew P. Hill High School.png" style="width:200px; height:200px;">
+						<img src="./static/img/Silver Creek High School.png" style="width:200px; height:200px;">
+						<img src="./static/img/Mt pleasant High school.png" style="width:200px; height:200px;">
+						<img src="./static/img/Evergreen Valley High School.png" style="width:200px; height:200px;">
+						<img src="./static/img/Andrew P. Hill High School.png" style="width:200px; height:200px;">
+						<img src="./static/img/Silver Creek High School.png" style="width:200px; height:200px;">
+						<img src="./static/img/Mt pleasant High school.png" style="width:200px; height:200px;">
+						<img src="./static/img/Evergreen Valley High School.png" style="width:200px; height:200px;">
+						<img src="./static/img/Freshman T-Shirt Front.png" style="width:200px; height:200px;">
+						<img src="./static/img/Junior t-shirt front.png" style="width:200px; height:200px;">
+						<img src="./static/img/Quach, Huy - IHS Senior Class Shirt 2015-2.png" style="width:200px; height:200px;">
+						<img src="./static/img/Quach, Huy - Seniors 2015 T-shirt back.png" style="width:200px; height:200px;">
+						<img src="./static/img/Sophomore Class Shirts Back.png" style="width:200px; height:200px;">
+						<img src="./static/img/T-shirt1.png" style="width:200px; height:200px;">
 					</div>
-					<div class="col-md-4 col-sm-4 news wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="10">
-						<i class="icon-truck iconBig"></i>
-						<h3>Home delivery</h3>
+					<!-- <div class="col-md-4 col-sm-4 news wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="10">
+						<i class="icon-lock iconBig news"></i>
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<h3>Startups</h3>
 					</div>
 					<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="10">
 						<i class="icon-lock iconBig news"></i>
-						<h3>Secure payment</h3>
-					</div>
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<img src="./static/img/Andrew P. Hill High School.png">
+						<h3>Shops</h3>
+					</div> -->
 				</div>
 			</div>
-		</section> -->
+		</section>
 
-		<section id="contact" class="dark-bg light-typo padding-top-bottom">
+		<section id="contact" class="gray-bg padding-top-bottom">
 			<div class="container">
 				<header class="section-header text-center">
 					<h1><strong>Contact</strong></h1>
@@ -448,12 +478,11 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 contact-info cta-message wow fadeInLeft">
 							<address>
-								<strong>InkLaundry LLC.</strong><br>
+								<strong>InkLaundry LLC</strong><br>
 								San Jose, CA<br>
-								(123) 456 - 7890<br>
-								contact@companyname.com
+								(408) 460 - 0740<br>
 							</address>
-						</div>	
+						</div>
 
 						<div class="col-xs-12 col-sm-12 col-md-8 wow fadeInUp" >
 							<div class="form-group">
@@ -483,21 +512,21 @@
 			</div>
 		</section>
 
-		<!-- <footer id="main-footer" class="dark-bg light-typo">
+		<footer id="main-footer" class="dark-bg light-typo">
 			<div class="container">
-				<p class="pull-left copyright wow fadeInUp">&copy; MicroStore 2014. <br> Designed by <a href="http://www.angelostudio.net" target="_blank">Angelo Studio</a>.<br>
+				<p class="pull-left copyright wow fadeInUp">&copy; InkLaundry 2013. <br>
 				</p>
 
 				<div class="pull-right paymentMethodImg copyright wow fadeInRight">
 					<a class="btn btn-store outline" href="#" data-toggle="modal" data-target=".text-modal">Terms & conditions</a>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 
-		<!-- <div class="modal fade text-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal fade text-modal" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
-					<div class="color-bg">	
+					<div class="color-bg">
 						<div class="container">
 							<div class="row ">
 								<div class="col-xs-12 col-sm-12 col-md-12 color-bg light-typo" id="9modal-bar">
@@ -509,7 +538,7 @@
 					</div>
 					<div class="container">
 						<div class="row ">
-							<div class="col-xs-12 col-sm-6 col-md-6" >	
+							<div class="col-xs-12 col-sm-6 col-md-6" >
 								<h3>Pricing policy</h3>
 								<p>Prices are shown in € (EURO). All prices include Danish VAT of 25%. Prices do not include service, payment and delivery charges. Orders may be subjected to local taxes and/or import duties at your own expense.
 								Tax-free shopping on microStore.com is not available.
@@ -558,14 +587,14 @@
 								<p>The terms of use are complied in accordance with Danish law and the Danish courts will have exclusive jurisdiction.
 								</p>
 							</div>
-							<div class="col-xs-12 col-sm-12 col-md-12 text-center" >	
+							<div class="col-xs-12 col-sm-12 col-md-12 text-center" >
 								<a class="btn btn-store" href="#" data-dismiss="modal">Back to shop</a><br><br>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
@@ -577,5 +606,4 @@
 		<script type="text/javascript" src="./static/js/custom.js"></script>
 		<script type="text/javascript" src="./static/js/app.js"></script>
 	</body>
-
 </html>

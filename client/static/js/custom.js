@@ -9,8 +9,8 @@ $(document).ready(function() {
 	/* Hero slider ======================================= */
 
 	$('#hero-slides').superslides({
-		// play: 4000,
-		// animation: 'fade'
+		play: 4000,
+		animation: 'fade'
 	});
 
 	/* Navbar colapse ======================================= */

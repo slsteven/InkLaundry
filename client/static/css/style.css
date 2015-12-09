@@ -2,11 +2,11 @@
 
 h1,h2,h3,h4,h5,h6, body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300; 
+	font-weight: 300;
 }
 p{
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300; 
+	font-weight: 300;
 	font-size: 18px;
 	line-height: 24px;
 	margin-bottom: 20px;
@@ -72,21 +72,21 @@ h3.center {
 .hero-image-bg {
 	overflow: hidden;
 	background-size: cover;
-	background-image: url('./static/img/hero_background.jpeg');
+	background-image: url('../img/01.jpg');
 	background-position: center 16%;
 	position: relative;
 	padding: 180px 0 120px 0;
 }
 
 #hero h2 {
-	font-size: 18px;
-}	
+	font-size: 22px;
+}
 #hero .btn-store {
 	margin: 0;
 }
 #hero img {
 	margin: 0 auto 0 auto;
-	 max-width: 300px; 
+	/* max-width: 300px; */
 	margin-bottom: 15px;
 }
 /* ------------------------ section ------------------------ */
@@ -105,7 +105,7 @@ h3.center {
 .image-bg {
 	overflow: hidden;
 	background-size: cover;
-	background-image: url('./static/img/12.jpg');
+	background-image: url('../img/12.jpg');
 	background-position: center 16%;
 	position: relative;
 }
@@ -113,7 +113,7 @@ h3.center {
 
 .overlay-bg {position: absolute; top: 0; left: 0; right: 0; bottom: 0;  opacity: 0.5;
 	background-color: #000;
-	z-index: 1;}
+	z-index: 10;}
 
 
 .dark-bg a {
@@ -133,6 +133,7 @@ footer {
 .img-center {
 	margin: 0 auto;
 }
+
 
 /* ------------------------ nav bar ------------------------ */
 .navbar{
@@ -174,7 +175,7 @@ footer {
 	color: #FFF;
 	line-height: 30px;
 }
-.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -278,7 +279,7 @@ footer {
 	background: transparent;
 	border:2px solid #23A657;
 	box-shadow: none;
-	
+
 	color: #23A657;
 	text-decoration: none;
 	-webkit-transition:all .3s ease-out;
@@ -432,20 +433,20 @@ table {
 	font-size: 16px;
 	text-decoration: line-through;
 	color: #999;
-	padding: 1px 8px 0 0 ; 
+	padding: 1px 8px 0 0 ;
 	display: inline;
 }
 
 .product {
 	position:relative;
-	 
+
 	margin-bottom: 30px;
 	 overflow: hidden;
 	 display:block;
 }
 
 .img-box:hover .hover-mask2{
-	opacity:.5; 
+	opacity:.5;
 	cursor: pointer;
 	-o-transition:.1s;-ms-transition:.1s;-moz-transition:.1s;-webkit-transition:.1s;transition:.1s;
 }
@@ -640,7 +641,7 @@ table {
 	box-shadow:none;
 	margin:0;
 	padding:0;
-	position:absolute; 
+	position:absolute;
 	top:0;
 	left: 0;
 	width:100%;
@@ -696,7 +697,7 @@ body.modal-open {
 
 /* ------------------------------ Contact -------------------------- */
 .contact-info h2{
-	margin-top: 0; 
+	margin-top: 0;
 }
 address {
 	font-size: 18px;
@@ -737,7 +738,7 @@ address {
 	font-size: 16px;
 	outline: none;
 }
-.lb_wrap .lb_label.top, 
+.lb_wrap .lb_label.top,
 .lb_wrap .lb_label.bottom {
 	left: 66px !important;
 }
@@ -842,7 +843,7 @@ address {
 	border:2px solid #FFF;
 }
 #contact-form .form-control:focus,
-#order-form .form-control:focus, 
+#order-form .form-control:focus,
 .input-group .form-control:focus {
 	outline:none;
 	border: 2px solid #23A657;
@@ -909,7 +910,7 @@ form p {
 
 .form-control-inline {
     min-width: 0;
-    width: auto!important; 
+    width: auto!important;
     display: inline!important;
 }
 
@@ -918,11 +919,11 @@ form p {
 }
 
 /* 320px order-form fix */
-#order-form table td:first-child, 
+#order-form table td:first-child,
 #order-form table th:first-child {
     padding-left: 0;
 }
-#order-form table td:last-child, 
+#order-form table td:last-child,
 #order-form table th:last-child {
     padding-right: 0;
 }
@@ -959,7 +960,7 @@ form p {
 	transition:all .3s ease-out;
 }
 .social-links li a i{
-	
+
 }
 .social-links li a:hover {
 	color:#FFF;
@@ -969,14 +970,14 @@ form p {
 }
 
 /* ------------------------------ Media -------------------------- */
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
 	.copyright {
 		width: 100%;
 		text-align: center;
 	}
 	h2 {font-size: 26px;}
-}	
-@media (max-width: 768px) { 
+}
+@media (max-width: 768px) {
 	.text-col,
 	.text-col2,
 	.cta-message {
@@ -995,7 +996,7 @@ form p {
 		top: 43%;
 	}
 	.welcome-content img {
-		padding: 0 15px; 
+		padding: 0 15px;
 	}
 	.padding-top-bottom {
 		padding: 30px 0;
@@ -1007,7 +1008,7 @@ form p {
 	}
 
 }
- @media (max-width: 992px) { 
+ @media (max-width: 992px) {
  	.cta-message {
 		text-align: center;
 	}
@@ -1015,11 +1016,11 @@ form p {
 		margin-top: 0;
 	}
  }
- @media (min-width: 1200px) { 
+ @media (min-width: 1200px) {
 	.modal-header {
 		height: 650px;
 	}
-	
+
 }
 
 
