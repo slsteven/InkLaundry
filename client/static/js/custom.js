@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	
+
 	/* wow ======================================= */
 
 	new WOW().init({
-		offset: 20 
+		offset: 20
 	});
 
 	/* Hero slider ======================================= */
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 	/* testimonial ======================================= */
 	$('.carousel').carousel();
-	
+
 	/* One Page Navigation Setup ======================================= */
 	$('#main-nav').singlePageNav({
 		offset: $('.navbar').height(),
@@ -39,8 +39,8 @@ $(document).ready(function() {
 		beforeStart: function() {},
 		onComplete: function() {}
 	});
-	
-	/* Bootstrap Affix ======================================= */		
+
+	/* Bootstrap Affix ======================================= */
 	$('#modal-bar').affix({
 		offset: {
 			top: 10,
@@ -48,18 +48,18 @@ $(document).ready(function() {
 	});
 
 
-	/* countdown ======================================= */	
+	/* countdown ======================================= */
 	var days = 3;
 	var date = new Date();
 	var res = date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-	
+
 	$('#countdown').countdown(res, function(event) {
 	  $(this).text(
 		event.strftime('%-d days %H:%M:%S')
 	  );
 	});
 
-	/* Smooth Hash Link Scroll ======================================= */	
+	/* Smooth Hash Link Scroll ======================================= */
 	$('.smooth-scroll').click(function() {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
@@ -73,7 +73,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-		
+
 	/* Project Preview	==============================================*/
 	$('.img-box').click(function(e) {
 		e.preventDefault();
@@ -83,15 +83,15 @@ $(document).ready(function() {
 			descr = elem.find('.project-description').html(),
 			slidesHtml = '<div class="slides-container">',
 			elemDataCont = elem.find('.project-description');
-			slides = elem.find('.project-description').data('images').split(',');
-		for (var i = 0; i < slides.length; ++i) {
-			slidesHtml = slidesHtml + '<img src=' + slides[i] + ' alt="">';
-		}
-		slidesHtml = slidesHtml + '</div><nav class="slides-navigation"><a href="#" class="next"><i class="icon-arrow-right"></i></a><a href="#" class="prev"><i class="icon-arrow-left"></i></a></nav>';
+		// 	slides = elem.find('.project-description').data('images').split(',');
+		// for (var i = 0; i < slides.length; ++i) {
+		// 	slidesHtml = slidesHtml + '<img src=' + slides[i] + ' alt="">';
+		// }
+		// slidesHtml = slidesHtml + '</div><nav class="slides-navigation"><a href="#" class="next"><i class="icon-arrow-right"></i></a><a href="#" class="prev"><i class="icon-arrow-left"></i></a></nav>';
 		$('#project-modal').on('show.bs.modal', function() {
 			$(this).find('#sdbr-title').text(title);
 			$(this).find('#sdbr-price').text(price);
-			$(this).find('#project-content').html(descr).append('<a id="btn-order" class="btn btn-store btn-right"  href="#">Order now</a>');
+			$(this).find('#project-content').html(descr).append('<a id="btn-order" class="btn btn-store btn-right"  href="#contact">contact</a>');
 			$(this).find('.screen').addClass('slides').html(slidesHtml);
 			if (elemDataCont.data('oldprice')) {
 				$(this).find('#sdbr-oldprice').show().text(elemDataCont.data('oldprice'))
@@ -138,8 +138,8 @@ $(document).ready(function() {
 		$('#logo').attr('src', 'img/logo-' + m.attr('id') + '.png');
 		$('#navlogo').attr('src', 'img/navlogo-' + m.attr('id') + '.png');
 		$('#style-switcher').removeClass('open');
-		return false; 
-	});	
+		return false;
+	});
 
 
 });
