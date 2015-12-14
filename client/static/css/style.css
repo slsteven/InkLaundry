@@ -419,6 +419,11 @@ table {
 }
 
 /* ------------------------------ products -------------------------- */
+.past_designs img {
+		height: 200px;
+		width: 200px;
+	}
+
 .project-price {
 	position: relative;
 	float: right;
